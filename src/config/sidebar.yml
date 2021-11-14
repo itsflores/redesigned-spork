@@ -16,9 +16,9 @@
       link: '/coursenotes/coursenotes'
     - label: Getting Started with Express
       link: '/coursenotes/express/express'
-    - label: Working with Express
-      link: '/coursenotes/express/workingWithExpress'
+    # - label: Working with Express
+    #   link: '/coursenotes/express/workingWithExpress'
 - label: More
   items:
     - label: 'Github'
-      link: https://github.com/JosephDrazen/comp2406_student_library
+      link: https://github.com/JosephDrazen/redesigned-spork
