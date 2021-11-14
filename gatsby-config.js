@@ -4,8 +4,8 @@ module.exports = {
     defaultTitle: `COMP2406 - Unofficial Student Docs`,
     siteTitleShort: `COMP2406 - Docs - Unofficial`,
     siteDescription: `COMP2406 Documentation Sourced By Students`,
-    siteUrl: `https://rocketdocs.netlify.app`,
-    siteAuthor: `@jpedroschmitz`,
+    siteUrl: `https://github.com/JosephDrazen/redesigned-spork`,
+    siteAuthor: `@josephmalovic`,
     siteImage: `/favicon.png`,
     siteLanguage: `en`,
     themeColor: `#8257E6`,
@@ -18,8 +18,8 @@ module.exports = {
       options: {
         configPath: `src/config`,
         docsPath: `src/docs`,
-        repositoryUrl: `https://github.com/jpedroschmitz/rocketdocs`,
-        baseDir: `examples/gatsby-theme-docs`,
+        repositoryUrl: `https://github.com/JosephDrazen/redesigned-spork`,
+        baseDir: ``,
       },
     },
     {
