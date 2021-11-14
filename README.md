@@ -2,6 +2,10 @@
 
 The repository holding COMP2406's student run unofficial documenting site. 
 
+**Site link**
+
+https://josephdrazen.github.io/redesigned-spork/
+
 **What is this Project?**
 
 Welcome to the COMP2406 Unofficial Documentation. This project is intended for computer science undergraduates at Carleton University for use in the course COMP2406.
@@ -15,7 +19,7 @@ There will be missing content, some bugs, and constant updates. We are currently
 
 Are you thinking of collaborating? If you're a TA or have the knowledge to share, create a new branch from main and open a PR with your proposed changes. Please include a detailed read-me and your reasons for adding the changes in your pull request.
 
-**Getting Started**
+**Getting Started (local development)**
 
 `git clone https://github.com/JosephDrazen/redesigned-spork`
 
