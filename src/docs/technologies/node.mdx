@@ -1,0 +1,96 @@
+# Installing Node
+
+Installing Node differs depending on the OS you are running. We will install NodeJS using nvm. 
+
+## Mac / Linux
+
+1. Open your terminal
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```
+
+2. Now open a new terminal window
+
+```bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+
+<br />
+
+```bash
+nvm ls
+```
+
+3. Verify that you see something like the following:
+
+```bash
+->       system
+iojs -> N/A (default)
+node -> stable (-> N/A) (default)
+unstable -> N/A (default)
+nvm_list_aliases:36: no matches found: /Users/joseph/.nvm/alias/lts/*
+```
+
+4. Now you can enter 
+
+```bash
+nvm install 14.15.4
+```
+
+> Note: v14.15.4 may be outdated by the time you follow these instructions. Make sure to install the version the prof suggests or the latest. 
+ 
+
+5. Once that has been installed you can type the following. 
+
+```bash
+nvm use 14.15.4
+```
+
+6. Now type 
+
+```bash
+node -v
+```
+
+7. If you installed v14.15.4 then you should see 
+
+```bash
+14.15.4
+```
+
+returned to you in the terminal. If you get an error with 
+```code: 'MODULE_NOT_FOUND',```
+then try going through these steps again. 
+
+<br />
+
+## Windows
+
+1. Go to nvm-windows repositories releases section [here](https://github.com/coreybutler/nvm-windows/releases) and select the latest release.
+2. Now, choose the nvm-setup.zip file and download it.
+3. Unzip the file and run the installer.
+4. Install Node using nvm by following the instructions below: 
+
+```bash
+nvm install 14.15.4
+```
+> Note: v14.15.4 may be outdated by the time you follow these instructions. Make sure to install the version the prof suggests or the latest. 
+
+```bash
+nvm use 14.15.4
+```
+
+5. Check if node has been installed correctly: 
+```bash
+node -v
+```
+
+You should see ```14.15.4``` returned to you in the terminal. 
+If you get an error with:
+```code: 'MODULE_NOT_FOUND',```
+then try going through these steps again. 
+
+<br />

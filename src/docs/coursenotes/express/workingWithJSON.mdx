@@ -1,0 +1,34 @@
+**Q:** How do I test receiving JSON versus HTML from my API? 
+
+A: There are multiple ways, some use a program called Postman (found [here](https://www.postman.com/)) 
+
+I'd suggest using curl commands in your terminal. Here is an example: 
+
+`curl` commands (short for Client URL) allow us to communicate to our web application server by specifying a specific URL and the data that needs to be sent to or received from the server. Here is a generic example: 
+
+```bash
+curl -H "Accept: application/json" "YOUR_ENDPOINT_HERE" 
+```
+
+So, let's try testing our first endpoint; 
+
+1. Run your server 
+2. Open a new terminal window
+3. run the following command: 
+
+```bash
+curl -H "Accept: application/json" http://localhost:3000/restaurants
+```
+
+1. Verify you received the correct JSON response. It should look something like: 
+
+```json
+{
+"restaurants" : 
+	[
+	  restaurant1: id,
+	  restuarant2: id,
+	  restuarant3: id,
+	],
+}
+```

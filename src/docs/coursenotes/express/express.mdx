@@ -1,0 +1,105 @@
+---
+title: 'Getting Started with Express'
+description: Learn how to get started with Express.
+---
+
+Express is a popular Node web framework and provides many functions to support building a server.
+
+Namely, Express can:
+
+- Write handlers for various HTTP requests such as GET, POST, and PUT
+- Work with template engines such as Pug
+- Add middle-ware to support request pipelines
+
+How do I add Express to my project?
+
+To start working with Express, we first want to understand npm. When working with a framework similar to Express, we need to install it in our project as a dependency. We use npm to manage the installation. As our projects become more complex, we tend to use more modules and frameworks to support them. Notably, all npm packages contain a file usually in the project root called package.json. This file holds various metadata relevant to the project, including the project's dependencies. Where does package.json come from?
+
+Well, we can add it by calling the following in the root of our project.
+
+```bash
+npm init
+```
+
+You will notice that you can now add a name, description, version number, and many other metadata to your new package.json. For now we can press "enter" while going through each prompt in the terminal. As a result, your package.json will look something like this:
+
+```json
+{
+  "name": "default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+```
+
+Once we complete the creation of the package.json, we can install Express as a dependency by calling the following at the root of our project.
+
+```bash
+npm i express
+```
+
+Now our package.json looks like this: 
+
+```json
+{
+  "name": "default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
+```
+
+Notice that Express installs correctly and is listed as a dependency of the project. Also take note that there is a new folder in your directory called `./node_modules`.
+`./node_modules` includes the files that allow Express to run. If you install another dependency those files will also be added to this folder. As you can imagine, `./node_modules` can grow quite large so we do not include this file when we submit tutorials or assignments. 
+Simply delete `./node_modules` when you want to submit your assignment or tutorial and include instructions to run `npm i` before starting your server in your readme.
+
+Now, let's add a file to the root of our project and name it `server.js`. 
+
+`server.js` will be our project's main file. So let's add a field in our package.json to make it easy for someone to run our server. 
+
+In our package.json make the following additions: 
+
+```json
+{
+  "name": "default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
+```
+
+Notice we changed main to point to `server.js` and we have added a new script called `start` that runs `node server.js` when we type the following command in our terminal:
+
+```bash
+npm start
+```
+
+Now we can add the Express module to `server.js` by adding this line of code: 
+
+```js
+const express = require("express");
+```
+
+Now we are ready to start working with Express. 

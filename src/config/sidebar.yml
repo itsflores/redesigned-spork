@@ -1,0 +1,24 @@
+# Sidebar navigation
+
+- label: 'About'
+  link: '/'
+- label: 'Getting started'
+  items:
+    - label: "Overview"
+      link: '/getting-started'
+    - label: 'Installing Node'
+      link: '/technologies/node'
+# - Label: HTTP Servers
+# - Label: Express Servers
+- label: Course Notes
+  items:
+    - label: Introduction
+      link: '/coursenotes/coursenotes'
+    - label: Getting Started with Express
+      link: '/coursenotes/express/express'
+    - label: Working with Express
+      link: '/coursenotes/express/workingWithExpress'
+- label: More
+  items:
+    - label: 'Github'
+      link: https://github.com/JosephDrazen/comp2406_student_library
